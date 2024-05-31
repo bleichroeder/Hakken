@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Authors>DHerzfeld</Authors>
+    <Company>TVEyes</Company>
+    <Description>Device and tuner diagnostic tools for Hakken.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hakken.Channel\Hakken.Channel.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\Hakken.Tuner\Hakken.Tuner.csproj" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>

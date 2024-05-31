@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <Authors>DHerzfeld</Authors>
+    <Company>TVEyes</Company>
+    <Description>Remote device capabilities for Hakken.</Description>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="8.0.0" />
+    <PackageReference Include="Teronis.MSBuild.Packaging.ProjectBuildInPackage" Version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hakken.Device\Hakken.Device.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\Hakken.Discovery\Hakken.Discovery.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\Hakken.Local\Hakken.Local.csproj" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>

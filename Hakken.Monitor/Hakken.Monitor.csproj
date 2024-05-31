@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Authors>DHerzfeld</Authors>
+    <Company>TVEyes</Company>
+    <Description>Device and tuner monitoring capabilities for Hakken.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hakken.Discovery\Hakken.Discovery.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\Hakken.Tuner\Hakken.Tuner.csproj" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>

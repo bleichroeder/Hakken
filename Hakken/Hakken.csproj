@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Description>SiliconDust and Hauppauge device discovery, control, capture, and monitoring.</Description>
+    <Company>TVEyes</Company>
+    <Authors>DHerzfeld</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.61" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Teronis.MSBuild.Packaging.ProjectBuildInPackage" Version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hakken.Capture.FFmpeg\Hakken.Capture.FFmpeg.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\Hakken.Capture\Hakken.Capture.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\Hakken.Channel\Hakken.Channel.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\Hakken.Device\Hakken.Device.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\Hakken.Discovery\Hakken.Discovery.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\Hakken.Local\Hakken.Local.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\Hakken.Tuner\Hakken.Tuner.csproj" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>

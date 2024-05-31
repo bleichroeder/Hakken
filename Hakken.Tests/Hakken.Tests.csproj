@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
+    <PackageReference Include="xunit" Version="2.8.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="6.0.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hakken.Capture.FFmpeg\Hakken.Capture.FFmpeg.csproj" />
+    <ProjectReference Include="..\Hakken.Capture\Hakken.Capture.csproj" />
+    <ProjectReference Include="..\Hakken.Channel\Hakken.Channel.csproj" />
+    <ProjectReference Include="..\Hakken.Control\Hakken.Control.csproj" />
+    <ProjectReference Include="..\Hakken.Device\Hakken.Device.csproj" />
+    <ProjectReference Include="..\Hakken.Diagnostics\Hakken.Diagnostics.csproj" />
+    <ProjectReference Include="..\Hakken.Discovery\Hakken.Discovery.csproj" />
+    <ProjectReference Include="..\Hakken.Local\Hakken.Local.csproj" />
+    <ProjectReference Include="..\Hakken.Monitor\Hakken.Monitor.csproj" />
+    <ProjectReference Include="..\Hakken.Remote.Control\Hakken.Remote.Control.csproj" />
+    <ProjectReference Include="..\Hakken.Remote\Hakken.Remote.csproj" />
+    <ProjectReference Include="..\Hakken.Serialization\Hakken.Serialization.csproj" />
+    <ProjectReference Include="..\Hakken.Tuner\Hakken.Tuner.csproj" />
+  </ItemGroup>
+
+</Project>

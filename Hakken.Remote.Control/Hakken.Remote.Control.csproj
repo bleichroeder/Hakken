@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Authors>DHerzfeld</Authors>
+    <Company>TVEyes</Company>
+    <Description>Remote device and tuner control capabilities for Hakken.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hakken.Device\Hakken.Device.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\Hakken.Remote\Hakken.Remote.csproj" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>
